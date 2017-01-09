@@ -1,0 +1,89 @@
+body{ text-align: center;}
+ body *{ margin: 20px auto; font-size: 20pt;}
+ .pre{float: left;}
+ .next{float: right;}
+ button {
+    top: 250px;
+    float: left;
+    position: absolute;
+}
+
+
+#firstCarousel{
+    position: relative;
+}
+
+#secondCarousel{
+    position: relative;
+}
+
+#carousel-container{
+    position: relative;
+    overflow: hidden;width: 940px;
+}
+.next {
+    position: absolute;
+    right: 200px;
+    top: 170px;
+}
+.prev {
+    position: absolute;
+    left: 200px;
+    top:170px;
+}
+
+/*right to left*/
+ @keyframes r2l {
+    0%    { left:100%; }
+    100% { left:0%; }
+}
+
+/*left to right*/
+ @keyframes l2r {
+    0%    { left:-100%; }
+    100% { left:0%; }
+}
+/*mid to left */
+@keyframes m2l {
+    0%    { right:0%; }
+    100% { right:100%; }
+}
+
+/*mid to right */
+ @keyframes m2r {
+     0%    { left: 0%; }
+    100% { left:100%; }
+}
+
+@keyframes rotateOut {
+    0% {opacity:1; transform:rotate(0deg);}
+    20%{opacity: 1.2;transform:rotate(35deg);}
+    100%{opacity:0; transform:rotate(180deg);}
+}
+
+@keyframes rotateIn {
+    from {opacity:0; transform:rotate(180deg);}
+    to   {opacity:1; transform:rotate(360deg);}
+}
+
+    
+@keyframes move {
+from {
+transform: scale(1, 1);
+-ms-transform: scale(1, 1); /* IE 9 */
+-webkit-transform: scale(1, 1); /* Safari and Chrome */
+-o-transform: scale(1, 1); /* Opera */
+-moz-transform: scale(1, 1); /* Firefox */
+opacity: 0;
+}
+to {
+transform: scale(1.10, 1.10);
+-ms-transform: scalescale(1.20, 1.20); /* IE 9 */
+-webkit-transform: scalescale(1.20, 1.20); /* Safari and Chrome */
+-o-transform: scalescale(1.20, 1.20); /* Opera */
+-moz-transform: scale(1.20, 1.20);/* Firefox */
+opacity: 1;
+
+}
+}
+

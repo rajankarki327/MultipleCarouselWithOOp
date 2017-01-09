@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>carosuel  Example</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="main1.js"></script>   
+    </head>
+    <body>
+        <h2>Simple Carousel</h2>
+        <div id='carousel-container'>
+        <div id="firstCarousel" class="firstCarousel">
+            <div class="carousel"><img src="slider1.jpg"></div>
+            <div class="carousel"><img src="slider2.jpg"></div>
+            <div class="carousel"><img src="slider3.jpg"></div>
+            <div class="carousel"><img src="slider4.jpg"></div> 
+        </div>
+
+        <div id="secondCarousel" class="secondCarousel">
+            <div class="carousel"><img src="slider1.jpg"></div>
+            <div class="carousel"><img src="slider2.jpg"></div>
+            <div class="carousel"><img src="slider3.jpg"></div>
+            <div class="carousel"><img src="slider4.jpg"></div> 
+        </div>
+        </div>
+        
+
+
+        <script>
+                
+        var o= {showIndicator : true, cycle : true, animation : "move",buttons: "show",interval:2000};
+        var rajan = new Carousel(o,document.getElementById('firstCarousel').id);
+
+        var options1= {showIndicator : true, buttons:"show",animation:"rotateIn", cycle : true, };
+        var rajan1=new Carousel(options1,document.getElementById('secondCarousel').id);
+
+        </script>   
+   </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+          
